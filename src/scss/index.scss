@@ -1,0 +1,11 @@
+@use "../scss/base/reset" as *;
+
+:root{
+  color-scheme: only dark;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}

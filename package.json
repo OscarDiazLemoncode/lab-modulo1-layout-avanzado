@@ -1,15 +1,20 @@
 {
-  "name": "desafio",
+  "name": "Warner Live",
   "version": "1.0.0",
-  "description": "",
+  "description": "Warner Live plataforma online",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+      "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Oscar Diaz",
   "license": "ISC",
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "sass": "^1.26.5"
+    "cssnano": "^7.1.2",
+    "sass": "^1.93.3",
+    "vite": "^7.2.2"
   }
 }
