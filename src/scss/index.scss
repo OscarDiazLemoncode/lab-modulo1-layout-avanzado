@@ -1,11 +1,17 @@
 @use "../scss/base/reset" as *;
+@use './abstracts/variables' as v;
+@use './layout/header' as *;
 
 :root{
   color-scheme: only dark;
-}
+  font-family: v.$font-family;
+  font-optical-sizing: auto;
+  font-style: normal;
 
+}
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
+
