@@ -1,0 +1,9 @@
+@mixin font_size($size){
+    font-size: $size;
+}
+
+@mixin mobile-tablet($size) {
+    @media (width <= $size){
+        @content;
+    }
+}

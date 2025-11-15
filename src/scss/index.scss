@@ -1,6 +1,7 @@
 @use "../scss/base/reset" as *;
 @use './abstracts/variables' as v;
 @use './layout/header' as *;
+@use './layout/main-home' as home;
 
 :root{
   color-scheme: only dark;

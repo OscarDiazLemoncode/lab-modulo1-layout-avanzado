@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
 
 .header {
     padding: v.$size-base* 4;
@@ -25,15 +26,17 @@
 
           .header__nav__title-app {
                 flex: 1 1 90%;
+                @include mx.font_size(v.$size-base * 4);
+
+                @include mx.mobile-tablet(v.$bp_tablet_mobile){
+                    visibility: hidden;
+                }
             }
 
             &>li:not(.header__nav__title-app) {
                 flex: 1 0 auto;
             }
         }
-
-
-
 
     }
 }

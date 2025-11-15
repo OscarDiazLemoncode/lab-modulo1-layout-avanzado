@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+
+main{
+    padding: v.$size-base * 4;
+
+}
+/* Populars */
+.populars {
+
+    &__title {
+        @include mx.font_size(v.$size-base * 3);
+
+        & span {
+            font-weight: 700;
+        }
+        &__featured{
+            @include mx.mobile-tablet(v.$bp_tablet_mobile){
+                display: none;
+            }
+        }
+
+        &__featured--small {
+            display: none;            
+            @include mx.mobile-tablet(v.$bp_tablet_mobile){
+                display:inline-block;
+            }
+        }
+    }
+
+    /* Top */
+    &-row {
+        padding: v.$size-base * 4 0;
+        display: flex;
+
+        &__item {
+            flex: 1 1 auto;
+            min-width: 225px;
+        }
+        &__item:nth-last-child(-n +2){
+            @include mx.mobile-tablet(v.$bp_tablet_mobile){
+                display: none;
+            }
+        }
+    }
+}
+
+/* Comedy */
+.comedy{
+
+}

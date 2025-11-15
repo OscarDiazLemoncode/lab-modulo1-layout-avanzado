@@ -1,78 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Warner Live plataforma online</title>
-     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" href="/favicon.ico" sizes="any"> 
-    <!-- Main SCSS -->
-     <link rel="stylesheet" href="scss/index.scss">
-     <!-- Color theme -->
-      <meta name="theme-color" content="#141414" />
-      <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)" />
-    
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo">
-          <a href="#/">
-            <img src="./assets/images/logo.png" alt="Logo Warner Live" title="Logo Warner Live">
-          </a>
-          
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warner Live plataforma online</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- Main SCSS -->
+  <link rel="stylesheet" href="scss/index.scss">
+  <!-- Color theme -->
+  <meta name="theme-color" content="#141414" />
+  <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)" />
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo">
+        <a href="#/">
+          <img src="./assets/images/logo.png" alt="Logo Warner Live" title="Logo Warner Live">
+        </a>
+
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li class="header__nav__title-app"><a href="#/">Warner Live</a></li>
+          <li><a href="#/">Inicio</a></li>
+          <li><a href="#/">Buscar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Populars -->
+    <section class="populars">
+      <h1 class="populars__title">Los <span class="populars__title__featured">5</span><span
+          class="populars__title__featured--small">3</span> más populares hoy</h1>
+          <!-- Top -->
+      <div class="populars-row">
+        <div class="populars-row__item">
+          <img src="./assets/images/top-1.jpg" alt="El último baile" title="El último baile">
         </div>
-        <nav class="header__nav">
-          <ul>
-            <li class="header__nav__title-app"><a href="#/">Warner Live</a></li>
-            <li><a href="#/">Inicio</a></li>
-            <li><a href="#/">Buscar</a></li>
-          </ul>
-        </nav>
+        <div class="populars-row__item">
+          <img src="./assets/images/top-2.jpg" alt="A tres metros sobre el cielo: la serie" title="A tres metros sobre el cielo: la serie">
+        </div>
+        <div class="populars-row__item">
+          <img src="./assets/images/top-3.jpg" alt="Dangeroues lies" title="Dangeroues lies">
+        </div>
+        <div class="populars-row__item">
+          <img src="./assets/images/top-4.jpg" alt="Yo nunca" title="Yo nunca">
+        </div>
+        <div class="populars-row__item">
+          <img src="./assets/images/top-5.jpg" alt="The last kingdom" title="The last kingdom">
+        </div>       
       </div>
-    </header>
-    <!-- <header>
-      <div class="header-logo">
-        <img src="assets/images/logo.png" />
-        <div class="platform-title">Warner Live</div>
+    </section>
+    
+    <!-- Comedy -->
+    <section class="comedy">
+      <h1 class="comedy__title">Comedias</h1>
+          <!-- Top -->
+      <div class="comedy-row">
+        <div class="comedy-row__item">
+          <img src="./assets/images/line3-1.jpg" alt="Los cien" title="Los cien">
+        </div>
+        <div class="comedy-row__item">
+          <img src="./assets/images/line3-2.jpg" alt="A tres metros sobre el cielo: la serie" title="A tres metros sobre el cielo: la serie">
+        </div>
+        <div class="comedy-row__item">
+          <img src="./assets/images/line3-3.jpg" alt="Dangeroues lies" title="Dangeroues lies">
+        </div>
+        <div class="comedy-row__item">
+          <img src="./assets/images/line3-4.jpg" alt="Yo nunca" title="Yo nunca">
+        </div>
+        <div class="comedy-row__item">
+          <img src="./assets/images/line3-5.jpg" alt="The last kingdom" title="The last kingdom">
+        </div>       
       </div>
-      <div class="header-buttons">
-        <div>Inicio</div>
-        <div>Buscar</div>
-      </div>
-    </header> -->
-    <main>
-      <div class="section-title">
-        Los <span id="top-text"></span> más populares hoy
-      </div>
-      <section class="top">
-        <div class="top-item"><img src="assets/images/top-1.jpg" /></div>
-        <div class="top-item"><img src="assets/images/top-2.jpg" /></div>
-        <div class="top-item"><img src="assets/images/top-3.jpg" /></div>
-        <div class="top-item"><img src="assets/images/top-4.jpg" /></div>
-        <div class="top-item"><img src="assets/images/top-5.jpg" /></div>
-      </section>
-      <div class="section-title">Comedias</div>
-      <section class="first">
-        <div class="item"><img src="assets/images/line1-1.jpg" /></div>
-        <div class="item"><img src="assets/images/line1-2.jpg" /></div>
-        <div class="item"><img src="assets/images/line1-3.jpg" /></div>
-        <div class="item"><img src="assets/images/line1-4.jpg" /></div>
-        <div class="item"><img src="assets/images/line1-5.jpg" /></div>
-        <div class="item"><img src="assets/images/line1-6.jpg" /></div>
-      </section>
-      <div class="section-title">Dramas basados en libros</div>
-      <section class="second">
-        <div class="item"><img src="assets/images/line2-1.jpg" /></div>
-        <div class="item"><img src="assets/images/line2-2.jpg" /></div>
-        <div class="item"><img src="assets/images/line2-3.jpg" /></div>
-        <div class="item"><img src="assets/images/line2-4.jpg" /></div>
-        <div class="item"><img src="assets/images/line2-5.jpg" /></div>
-        <div class="item"><img src="assets/images/line2-6.jpg" /></div>
-      </section>
-    </main>
-    <footer></footer>
-    <script type="module" src="index.js"></script>
-  </body>
+    </section>
+    <!-- Drama -->
+    <div class="section-title">Dramas basados en libros</div>
+    <section class="second">
+      <!-- <div class="item"><img src="assets/images/line2-1.jpg" /></div> -->
+    </section>
+  </main>
+  <footer></footer>
+  <!-- <script type="module" src="index.js"></script> -->
+</body>
+
 </html>
