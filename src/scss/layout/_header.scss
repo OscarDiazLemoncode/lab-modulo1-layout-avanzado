@@ -3,11 +3,16 @@
 
 .header {
     padding: v.$size-base* 4;
+    position: sticky;
+    top: 0;
+    background-color:v.$primary-color;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.3);
 
     &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include mx.max-width-vw;
 
     }
 
@@ -17,24 +22,36 @@
 
     &__nav {
         width: 100%;
-        padding: v.$size-base* 2;
 
         & ul {
             width: 100%;
             display: flex;
+            align-items: center;
+            justify-content: end;
             gap: v.$size-base* 4;
+
+            & li>a{
+                padding: v.$size-base * 2;
+            }
+
+            & li:not(:first-child)> a{
+                &:hover{
+                    @include mx.hover-color(v.$primary-color, v.$white-color);
+                    border-radius: v.$size-base / 2;
+                }
+            }
 
           .header__nav__title-app {
                 flex: 1 1 90%;
                 @include mx.font_size(v.$size-base * 4);
 
-                @include mx.mobile-tablet(v.$bp_tablet_mobile){
-                    visibility: hidden;
+                @include mx.media-querie(v.$bp_tablet_mobile){
+                    display: none;
                 }
             }
 
             &>li:not(.header__nav__title-app) {
-                flex: 1 0 auto;
+                flex: 0 0 auto;
             }
         }
 

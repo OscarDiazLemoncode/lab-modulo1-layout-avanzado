@@ -2,7 +2,19 @@
     font-size: $size;
 }
 
-@mixin mobile-tablet($size) {
+@mixin hover-color($color, $bg-color){
+    color:$color;
+    background-color: $bg-color;
+}
+
+@mixin max-width-vw{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Queries */
+
+@mixin media-querie($size) {
     @media (width <= $size){
         @content;
     }
